@@ -933,8 +933,8 @@ button {
 }
 
 .experience.is-revealed .fortune-ink {
-  opacity: 0.46;
-  filter: blur(1.8px);
+  opacity: 0.68;
+  filter: blur(0.7px);
   transform: translateY(0);
 }
 
@@ -1469,14 +1469,15 @@ button {
   }
 
   .result-actions {
-    bottom: 20px;
-    flex-wrap: wrap;
-    gap: 12px;
+    bottom: 56px;
+    flex-wrap: nowrap;
+    gap: 10px;
     width: min(88vw, 360px);
   }
 
   .result-button {
-    min-width: min(88vw, 260px);
+    min-width: 0;
+    flex: 1 1 0;
     min-height: 48px;
     padding: 12px 22px 13px;
     font-size: 13px;
@@ -1524,6 +1525,15 @@ button {
   }
 
   .step-count {
+    transform: translateY(-14vh);
+  }
+
+  .ritual-copy h1,
+  .step-line {
+    transform: translateY(-13vh);
+  }
+
+  .step-count {
     margin-bottom: 24px;
     gap: 12px;
   }
@@ -1567,7 +1577,7 @@ button {
 
   100% {
     opacity: 0.9;
-    transform: translate3d(54vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+    transform: translate3d(50vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
     filter: blur(0.08px);
   }
 }
@@ -1575,11 +1585,11 @@ button {
 @keyframes fortunePaperRestMobile {
   0%,
   100% {
-    transform: translate3d(54vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+    transform: translate3d(50vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
   }
 
   50% {
-    transform: translate3d(54.8vw, 13.2vh, 0) rotate(0.4deg) perspective(900px) rotateX(59deg) rotateZ(-3deg) scale(1);
+    transform: translate3d(50.8vw, 13.2vh, 0) rotate(0.4deg) perspective(900px) rotateX(59deg) rotateZ(-3deg) scale(1);
   }
 }
 
