@@ -713,11 +713,11 @@ function drawPaper() {
     stepTitle.textContent = "显影";
     stepLine.textContent = "签文正在水面上慢慢浮现";
     experience.classList.add("is-ready-for-reveal");
-  }, 4600);
+  }, 3000);
 
   revealInkTimer = window.setTimeout(() => {
     experience.classList.add("is-revealed");
-  }, 5600);
+  }, 3600);
 }
 
 async function loadFortuneLibrary() {

@@ -736,8 +736,8 @@ button {
   opacity: 1;
   pointer-events: none;
   animation:
-    fortunePaperToWater 5.2s cubic-bezier(0.28, 0.74, 0.22, 1) forwards,
-    fortunePaperRest 7.2s ease-in-out 5.2s infinite;
+    fortunePaperToWater 3.2s cubic-bezier(0.32, 0.72, 0.24, 1) forwards,
+    fortunePaperRest 7.2s ease-in-out 3.2s infinite;
 }
 
 .experience.is-drawn .fortune-paper::after {
@@ -840,9 +840,10 @@ button {
 }
 
 .tap-hint {
+  display: none;
   position: absolute;
-  left: 66%;
-  top: 67%;
+  left: 65%;
+  top: 52%;
   z-index: 13;
   width: clamp(22px, 2.4vw, 34px);
   aspect-ratio: 0.76 / 1;
@@ -1180,7 +1181,7 @@ button {
 }
 
 .result-luck {
-  font-size: 0.72em;
+  font-size: 1.05em;
   font-family: var(--result-calligraphy-font);
   letter-spacing: 0;
 }
@@ -1348,17 +1349,9 @@ button {
     transform: rotate(-7deg) perspective(900px) rotateX(54deg) rotateZ(-1deg);
   }
 
-  28% {
-    transform: translate3d(12vw, -12vh, 0) rotate(-4deg) perspective(900px) rotateX(42deg) rotateZ(-7deg) scale(0.98);
-  }
-
-  68% {
-    transform: translate3d(36vw, -8vh, 0) rotate(-1.2deg) perspective(900px) rotateX(50deg) rotateZ(-4deg) scale(1);
-  }
-
   100% {
     opacity: 0.9;
-    transform: translate3d(42vw, -10vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+    transform: translate3d(44vw, 3vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
     filter: blur(0.08px);
   }
 }
@@ -1366,11 +1359,11 @@ button {
 @keyframes fortunePaperRest {
   0%,
   100% {
-    transform: translate3d(42vw, -10vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+    transform: translate3d(44vw, 3vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
   }
 
   50% {
-    transform: translate3d(42.8vw, -10.8vh, 0) rotate(0.4deg) perspective(900px) rotateX(59deg) rotateZ(-3deg) scale(1);
+    transform: translate3d(44.8vw, 2.2vh, 0) rotate(0.4deg) perspective(900px) rotateX(59deg) rotateZ(-3deg) scale(1);
   }
 }
 
@@ -1442,7 +1435,7 @@ button {
 
   .draw-object {
     left: 16vw;
-    top: 44vh;
+    top: 33vh;
     width: min(28vw, 124px);
     min-height: 0;
     transform: rotate(-7deg);
@@ -1450,13 +1443,13 @@ button {
 
   .fortune-paper {
     left: 16vw;
-    top: 44vh;
+    top: 33vh;
     width: min(28vw, 124px);
   }
 
   .tap-hint {
-    left: 76vw;
-    top: 72vh;
+    left: 78vw;
+    top: 60vh;
     width: 24px;
   }
 
@@ -1466,10 +1459,13 @@ button {
   }
 
   .result-main-paper {
+    position: fixed;
     width: min(68vw, 300px);
     min-width: 0;
     padding: 14px;
-    transform: translate(-42%, -54%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .result-actions {
@@ -1506,7 +1502,7 @@ button {
   }
 
   .result-luck-ring {
-    width: 42px;
+    width: 48px;
     border-width: 2px;
   }
 
@@ -1524,7 +1520,7 @@ button {
   .ritual-copy {
     grid-column: 1;
     justify-self: center;
-    transform: translateY(-2vh);
+    transform: translateY(11vh);
   }
 
   .step-count {
@@ -1546,9 +1542,44 @@ button {
   }
 
   .start {
+    bottom: clamp(118px, 18vh, 168px);
     width: min(72vw, 260px);
     min-width: 0;
     padding-inline: 18px;
+  }
+
+  .experience.is-drawn .ritual-copy {
+    transform: translate3d(0, 11vh, 0);
+  }
+
+  .experience.is-drawn .fortune-paper {
+    animation:
+      fortunePaperToWaterMobile 3.2s cubic-bezier(0.32, 0.72, 0.24, 1) forwards,
+      fortunePaperRestMobile 7.2s ease-in-out 3.2s infinite;
+  }
+}
+
+@keyframes fortunePaperToWaterMobile {
+  0% {
+    opacity: 1;
+    transform: rotate(-7deg) perspective(900px) rotateX(54deg) rotateZ(-1deg);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translate3d(54vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+    filter: blur(0.08px);
+  }
+}
+
+@keyframes fortunePaperRestMobile {
+  0%,
+  100% {
+    transform: translate3d(54vw, 14vh, 0) rotate(0deg) perspective(900px) rotateX(58deg) rotateZ(-4deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(54.8vw, 13.2vh, 0) rotate(0.4deg) perspective(900px) rotateX(59deg) rotateZ(-3deg) scale(1);
   }
 }
 
