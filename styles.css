@@ -1525,29 +1525,26 @@ button {
   }
 
   .step-count {
-    transform: translateY(-1vh);
+    transform: translateY(-31vh);
   }
 
   .ritual-copy h1,
   .step-line {
-    transform: translateY(0);
+    transform: translateY(-30vh);
   }
 
   .step-count {
     margin-bottom: 24px;
     gap: 12px;
-    line-height: 1.4;
   }
 
   .ritual-copy h1 {
     font-size: 44px;
-    line-height: 1.16;
   }
 
   .step-line {
     margin: 20px 0 26px;
     font-size: 15px;
-    line-height: 1.7;
   }
 
   .ritual-button {
