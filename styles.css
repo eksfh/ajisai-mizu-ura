@@ -1469,7 +1469,7 @@ button {
   }
 
   .result-actions {
-    bottom: 56px;
+    bottom: 52px;
     flex-wrap: nowrap;
     gap: 10px;
     width: min(88vw, 360px);
@@ -1525,12 +1525,12 @@ button {
   }
 
   .step-count {
-    transform: translateY(-31vh);
+    transform: translateY(-1vh);
   }
 
   .ritual-copy h1,
   .step-line {
-    transform: translateY(-30vh);
+    transform: translateY(0);
   }
 
   .step-count {
@@ -1549,6 +1549,10 @@ button {
 
   .ritual-button {
     min-width: min(76vw, 250px);
+  }
+
+  .draw-button {
+    transform: translateY(128px);
   }
 
   .start {
