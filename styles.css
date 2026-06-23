@@ -1435,7 +1435,7 @@ button {
 
   .draw-object {
     left: 16vw;
-    top: 33vh;
+    top: 44vh;
     width: min(28vw, 124px);
     min-height: 0;
     transform: rotate(-7deg);
@@ -1443,7 +1443,7 @@ button {
 
   .fortune-paper {
     left: 16vw;
-    top: 33vh;
+    top: 44vh;
     width: min(28vw, 124px);
   }
 
@@ -1521,16 +1521,16 @@ button {
   .ritual-copy {
     grid-column: 1;
     justify-self: center;
-    transform: translateY(11vh);
+    transform: translateY(-2vh);
   }
 
   .step-count {
-    transform: translateY(-14vh);
+    transform: translateY(-1vh);
   }
 
   .ritual-copy h1,
   .step-line {
-    transform: translateY(-13vh);
+    transform: translateY(0);
   }
 
   .step-count {
@@ -1559,7 +1559,7 @@ button {
   }
 
   .experience.is-drawn .ritual-copy {
-    transform: translate3d(0, 11vh, 0);
+    transform: translate3d(0, -2vh, 0);
   }
 
   .experience.is-drawn .fortune-paper {
