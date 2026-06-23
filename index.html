@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>开始水占卜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="experience" data-state="home">
+      <img
+        class="scene"
+        src="assets/images/ritual-unified-garden.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <div class="water-glow" aria-hidden="true"></div>
+      <div class="mist" aria-hidden="true"></div>
+      <div class="basin-ripple" aria-hidden="true"></div>
+      <div class="bamboo-stream" aria-hidden="true"></div>
+      <div class="petals" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+          <span></span>
+      </div>
+
+      <section class="home-screen" aria-label="水占卜首页">
+        <button class="start" type="button">开始水占卜</button>
+      </section>
+
+      <section class="ritual ritual-scene" aria-label="水占卜仪式" aria-hidden="true">
+        <div class="ritual-object draw-object">
+          <div class="wood-box">
+            <div class="box-back"></div>
+            <div class="paper-stack">
+              <span class="paper paper-sheet sheet-2"></span>
+              <span class="paper paper-sheet sheet-3"></span>
+              <span class="paper paper-sheet sheet-4"></span>
+              <span class="paper paper-sheet sheet-5"></span>
+            </div>
+            <div class="box-front"></div>
+            <div class="box-side box-side-left"></div>
+            <div class="box-side box-side-right"></div>
+          </div>
+        </div>
+
+        <button class="paper fortune-paper" type="button" aria-label="签纸">
+          <span class="paper-title">水占</span>
+          <span class="paper-grid"></span>
+          <span class="fortune-ink" aria-hidden="true">
+            <span class="fortune-grade">吉</span>
+            <span class="fortune-poem">浮光映水，心愿渐明</span>
+            <span class="fortune-detail">此刻所求，宜缓不宜急</span>
+          </span>
+        </button>
+
+        <div class="ritual-copy">
+          <p class="step-count">01 / 04</p>
+          <h1>取签</h1>
+          <p class="step-line">抽取一张空白签纸</p>
+          <button class="ritual-button draw-button" type="button">取一张签纸</button>
+        </div>
+
+        <div class="tap-hint" aria-hidden="true">
+          <svg
+            class="tap-hint-cursor"
+            viewBox="0 0 32 42"
+            aria-hidden="true"
+          >
+            <path
+              d="M5.4 4.6L25.6 24.2L15.8 26.6L11.2 37.1L5.4 4.6Z"
+            />
+          </svg>
+          <span class="tap-hint-spark"></span>
+        </div>
+      </section>
+
+      <section class="result-screen" aria-label="水占卜结果" aria-hidden="true">
+        <img
+          class="result-scene"
+          src="assets/images/ritual-unified-garden.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="result-vignette" aria-hidden="true"></div>
+        <div class="result-main-paper" aria-hidden="true">
+          <span class="result-corner result-corner-tl"></span>
+          <span class="result-corner result-corner-tr"></span>
+          <span class="result-corner result-corner-bl"></span>
+          <span class="result-corner result-corner-br"></span>
+          <span class="result-number-label" data-field="number_label">第01番</span>
+
+          <div class="result-omikuji-grid result-omikuji-grid-top">
+            <div class="result-cell result-head">方向</div>
+            <div class="result-cell result-head">病気</div>
+            <div class="result-cell result-head">出産</div>
+            <div class="result-cell result-head">恋愛</div>
+            <div class="result-cell result-head">願望</div>
+            <div class="result-cell"><span class="result-text" data-field="direction">東方為吉</span></div>
+            <div class="result-cell"><span class="result-text" data-field="illness">安心養靜</span></div>
+            <div class="result-cell"><span class="result-text" data-field="childbirth">母子平安</span></div>
+            <div class="result-cell"><span class="result-text" data-field="love">緣分自來</span></div>
+            <div class="result-cell"><span class="result-text" data-field="wish">心想事成</span></div>
+          </div>
+
+          <div class="result-paper-mark">
+            <span>水占</span>
+            <span class="result-luck-ring"><span class="result-luck" data-field="luck">吉</span></span>
+            <span>みくじ</span>
+          </div>
+
+          <div class="result-omikuji-grid result-omikuji-grid-bottom">
+            <div class="result-cell result-head">転居</div>
+            <div class="result-cell result-head">失せ物</div>
+            <div class="result-cell result-head">商売</div>
+            <div class="result-cell result-head">学問</div>
+            <div class="result-cell result-head">旅行</div>
+            <div class="result-cell"><span class="result-text" data-field="relocation">靜待時機</span></div>
+            <div class="result-cell"><span class="result-text" data-field="lost_item">遲日可見</span></div>
+            <div class="result-cell"><span class="result-text" data-field="business">漸入佳境</span></div>
+            <div class="result-cell"><span class="result-text" data-field="study">勤學有得</span></div>
+            <div class="result-cell"><span class="result-text" data-field="travel">西方為吉</span></div>
+          </div>
+        </div>
+        <div class="result-actions" aria-label="结果操作">
+          <button class="result-button result-button-download" type="button">
+            <span class="result-button-icon" aria-hidden="true">↓</span>
+            <span>下载结果图片</span>
+          </button>
+          <button class="result-button result-button-home" type="button">
+            <span class="result-button-icon" aria-hidden="true">↻</span>
+            <span>返回首页</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
